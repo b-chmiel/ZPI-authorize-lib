@@ -22,7 +22,7 @@ const getToken = (host, code, clientId) => {
     })
   );
 
-  return xhr.responseText;
+  return JSON.parse(xhr.response);
 };
 
 export default getToken;
