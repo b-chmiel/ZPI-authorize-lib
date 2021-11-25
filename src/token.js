@@ -1,6 +1,6 @@
 const getToken = (host, code, clientId) => {
   var xhr = new XMLHttpRequest();
-  const url = "http://" + host + "/api/token";
+  const url = host + "/api/token";
   const origin = window.location.origin;
   xhr.open("POST", url, false);
   xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");

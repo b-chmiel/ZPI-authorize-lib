@@ -18,7 +18,6 @@ const AuthButton = ({ clientId, host, redirectURI }) => {
     const scope = "scope=" + "init";
 
     const url =
-      "http://" +
       host +
       endpoint +
       "?" +
